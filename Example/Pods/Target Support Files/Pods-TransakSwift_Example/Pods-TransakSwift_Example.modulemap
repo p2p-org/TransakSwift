@@ -1,6 +1,0 @@
-framework module Pods_TransakSwift_Example {
-  umbrella header "Pods-TransakSwift_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

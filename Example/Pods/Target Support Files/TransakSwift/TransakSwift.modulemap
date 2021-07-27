@@ -1,6 +1,0 @@
-framework module TransakSwift {
-  umbrella header "TransakSwift-umbrella.h"
-
-  export *
-  module * { export * }
-}
