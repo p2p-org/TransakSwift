@@ -1,27 +1,41 @@
 PODS:
+  - BEPureLayout (0.3.0):
+    - PureLayout
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - PureLayout (3.1.8)
   - TransakSwift (0.1.0)
 
 DEPENDENCIES:
+  - BEPureLayout (from `https://github.com/bigearsenal/BEPureLayout.git`)
   - FBSnapshotTestCase (~> 2.1.4)
   - TransakSwift (from `../`)
 
 SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
+    - PureLayout
 
 EXTERNAL SOURCES:
+  BEPureLayout:
+    :git: https://github.com/bigearsenal/BEPureLayout.git
   TransakSwift:
     :path: "../"
 
-SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  TransakSwift: c8df814128eb3a97ca83d728a316c948980cfc12
+CHECKOUT OPTIONS:
+  BEPureLayout:
+    :commit: ab09c8312a742a0be044122710dc52b7ba40809b
+    :git: https://github.com/bigearsenal/BEPureLayout.git
 
-PODFILE CHECKSUM: 1c9ddd03cc321df1c119bdeafcf1e0cb1ec3a659
+SPEC CHECKSUMS:
+  BEPureLayout: ecb9d52780a665b9ea751b4e82f95df8dc2bc73b
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  PureLayout: a4afb3d79dd958564ce33d22c89f407280d8e6a8
+  TransakSwift: 65d2629006910f355e7c96c117485ebb12cbad0c
+
+PODFILE CHECKSUM: 0ebf5e8c8d892dca7261a4488f1d0744228b241c
 
 COCOAPODS: 1.10.1

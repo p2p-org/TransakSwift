@@ -7,132 +7,278 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
-		121439AB6B4061E1B6222256817548FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E658F388F01C72599CA75537950B6095 /* XCTest.framework */; };
-		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
-		17D36CA61C29678BCB39E4DB4D1CDA5F /* TransakSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E47BE211EE17B20F0DE717096F9F1903 /* TransakSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24BB4F20A84FEBB49ABEE73F90962DD8 /* Pods-TransakSwift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBDBBD87B3FFD8FE759B02959C33460 /* Pods-TransakSwift_Example-dummy.m */; };
-		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
-		2E4C0BD2363ABABB6470FBA5415985AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
-		2F568DDCBD37399DDE3A6C652E44CCF1 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4817DF0177D7FD166DC6BA4AC54DF5AA /* ReplaceMe.swift */; };
-		320E27368CB1021CE85A1AA37CC6F424 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		3491B3BF5E781B5818EF5B4E21B573B3 /* TransakSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D6512E5ADE11AA04479BF6EB9DCF69 /* TransakSwift-dummy.m */; };
-		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
+		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = F52479A579E0DEFB6E2C77C3BF4AC2B0 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0634923F6F88A35194FC75663E335E34 /* Pods-TransakSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EFE62FA9D7387B5CA6F15537DABCBD0 /* Pods-TransakSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06E4C1F0E0B28D71FC0D1ED155C03007 /* BEPureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 129E07B40BF65F75B0099F486B9C34BA /* BEPureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08F44616F82705E505F52B4109CF0095 /* BERotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7512A8B3F905C9CF9BC18B13AC2077 /* BERotationAnimation.swift */; };
+		091158C9B27AEAC68CDC8C7AEDCE76EC /* UIImageView+PureLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5C1C57AB70A86CF9CD54EF0C0818CF /* UIImageView+PureLayout.swift */; };
+		0B514E5D33FA1FCB91925DAA539C0A04 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E7A03F8105C2260CF21DFAC05471C1E /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E3010DF24B069CD003ED237B8DD1E08 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CAD9EB3F4307840181CECE32A335A37 /* Image.xcassets */; };
+		10FD357531454B0B8CD724BA57843923 /* BECheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD9C9AB35F8EEF3BB60802A5D21D29 /* BECheckBox.swift */; };
+		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 788DC93694B4800ED076004045A04416 /* UIApplication+StrictKeyWindow.m */; };
+		121439AB6B4061E1B6222256817548FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D5518D1D628004D876BD93C3BF2B4A /* XCTest.framework */; };
+		14641F21D4F5A24CA5770856FF4B6E80 /* BEStrokeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C1B63889AB3B0A1392CDBB1CB016CB /* BEStrokeAnimation.swift */; };
+		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = C49C0829150021FC4F576BA102B38701 /* UIImage+Diff.m */; };
+		1660C784E848EC0C8BC4898A5C15817E /* UIEdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAD8BB79DBA77EC4A61E0834347F6EA /* UIEdgeInsets+Extensions.swift */; };
+		172490192B9C6F3570255ACA97D525CC /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FBC731EAA53D9557310539354A5682D /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17D36CA61C29678BCB39E4DB4D1CDA5F /* TransakSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5915B5434D0990F6325B668D1DB5554 /* TransakSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E77B11D01DE6807662DFB2A953ADE /* UIImage+Compare.m */; };
+		2E4C0BD2363ABABB6470FBA5415985AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0094C28C5F9F353C7F5611502BD9A7F /* QuartzCore.framework */; };
+		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F70F50094E0D0922397B602921D105F /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		405978E1ECBC8A4F0BA3D458354C8137 /* BEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF9D09DA205E094B7D7EB603AE763E /* BEViewController.swift */; };
+		42DBDDB43A805C025E3183B836AC49FE /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8FDFF73F0D9C1D6960F6E32DEE2059 /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		471E0035E1B43920A11D7C8A9CE8977F /* TransakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D382FFFEF7F760FB34DD7EA1B111C /* TransakViewController.swift */; };
+		4D044A4D6BDC1A7FD8726CC074608F5B /* BEDimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0938B524498629119389CA64B704B73 /* BEDimmingPresentationController.swift */; };
+		4E6074C3189A42F4700733532CE9499C /* UILabel+PureLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8D8AC5D7BD91F5B5D0720CBE56B0DF /* UILabel+PureLayout.swift */; };
+		58FCB5FFB1EE51B21D92378267CE2C91 /* ContentHuggingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6651D0CF105B368EEEA9D0C06F68DDAD /* ContentHuggingScrollView.swift */; };
+		5C73D5F9337D0DB7699F64095F73D63B /* BEPureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B11CA767A02F424090E16E6B1F39FAA7 /* BEPureLayout-dummy.m */; };
+		5D3EF981182B18876F9E408D965BB3CB /* UIView+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F523DCCDF7701EE31594305D88289372 /* UIView+UIStackView.swift */; };
+		604A95F3E43CB07836304CEC341CB447 /* UIButton+PureLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2629115707DC57B47589E2A455BBE2 /* UIButton+PureLayout.swift */; };
+		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069315B45613F16FD3D9CFB243DCEE4 /* FBSnapshotTestCase-dummy.m */; };
+		6E407616E96BFDD9D00A042D736B5E13 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3610F991BF0ABA6A037C306452EC53A /* Navigation.swift */; };
 		6E7DE65D11BC909C180D008BD331E055 /* Pods-TransakSwift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D5B20684676CDB63B508E449AFBC79A /* Pods-TransakSwift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7946F5CB36BD4DEBA31638176793B0DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
-		8B570D43DE350CA3A01CE57FA483B6E6 /* Pods-TransakSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EFE62FA9D7387B5CA6F15537DABCBD0 /* Pods-TransakSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
-		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */; };
-		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */; };
-		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		786B4853CB92717B18A1543B4F4D985A /* BESearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D723ABF84107BAB81284BE138F4168E1 /* BESearchBar.swift */; };
+		7946F5CB36BD4DEBA31638176793B0DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC16EB5E289B2E78C0E52A9E6089E495 /* Foundation.framework */; };
+		7AB65A281DB57169B19C273124CD43CB /* BETableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD2D4BD554290E420A41D4D271C6B8B /* BETableHeaderView.swift */; };
+		7B146A96623A88E9184E2C7FABF9BFF2 /* BEPagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F002AE62879661787BE21067961628 /* BEPagesVC.swift */; };
+		7ECC502ED4CFFF82C88B431F34E088FC /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DACCCC014969853A52CF0F923F1EE0BD /* PureLayout-dummy.m */; };
+		7EDB2FA9744DFD71DE5A9FF683FFBA9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC16EB5E289B2E78C0E52A9E6089E495 /* Foundation.framework */; };
+		878F979C48FCBDA59329D12937912F2C /* Numeric+PureLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5276E4EDF362CD8075BAF7A370BC96 /* Numeric+PureLayout.swift */; };
+		87ECEF5381F0ECFE58EB809C5CC71C42 /* BEStackViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253E6E4597A08CDE1ACA48E7A5E907F8 /* BEStackViewBuilder.swift */; };
+		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546D603AB263B61F4EB97C5BEAA4174D /* FBSnapshotTestController.m */; };
+		8BDE372ED20231FE7E172555F14DE262 /* UITextField+PureLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E90DB58F36CDE3C5732F45409D365 /* UITextField+PureLayout.swift */; };
+		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494A16DA1C83544AA51760C92B34B /* FBSnapshotTestCase.m */; };
+		8D5225B99A6C416C0197BA90E067E7FB /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 546FCA04EC1665115D2FF9660C5124BD /* ALView+PureLayout.m */; };
+		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = D0072DCF571F18512A3B99FFF4B8C078 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95D1C42E256C9C6729DFA1D534F7155A /* BEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A57E6519C9251A99E43AA9DAACFF6AD /* BEView.swift */; };
+		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B6377264787F1FA1C4C3C1F9E00A31 /* SwiftSupport.swift */; };
+		A231C1A9F245D302C0D4E21D540E26E4 /* BESpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EAD9DF14253F3A9081F4F7D7A377B6 /* BESpinnerView.swift */; };
+		A334B1BE037E04141B9C651C663DD687 /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CBAB5F12BE5CB3D0921629B54A8C0 /* NSLayoutConstraint+Extensions.swift */; };
+		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B3F08B90D3703B73344D3A07E9CAF /* UIImage+Snapshot.m */; };
+		A884FD94C86F3F7087008D29177CB97F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC16EB5E289B2E78C0E52A9E6089E495 /* Foundation.framework */; };
+		A9CA5D0ED9E38308C4E47AEB2E54FA5B /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF6388E2DE3DF81C01648DA4F054AA7 /* PureLayout.framework */; };
+		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 81C539A60C9F4297FB39BDDA39E53912 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B75FA7E512ED02CB9652C62A6BAAC7C2 /* Pods-TransakSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1182F57857A363B76A1329BE71FD34 /* Pods-TransakSwift_Tests-dummy.m */; };
-		BD4953074A12E769ED4E6C94F5E73694 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
-		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA63ADACAC6C2BF1E30108E6BEF68A09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
-		EF132D1C56CEE22D929DCBA7AE252A97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7CFC531CD79B13950204F036858A22A /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDF92CEE6F7F637A50C89097573AFAD6 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD4953074A12E769ED4E6C94F5E73694 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D26E12BDECA055F37C9983F7E103E9 /* UIKit.framework */; };
+		BD9BBB385F64F87845A33B47A0632E5A /* BENavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A41BD8562116A1B1878D672FD0E9E /* BENavigationController.swift */; };
+		BDB5B57D43893752AF2BAB34EECCAB48 /* UIView+LayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25911DC57F9CA9D12C5CBB7DD6CFF58 /* UIView+LayoutAnchor.swift */; };
+		C17CD866C1183CA7F3C753A15D8BEACE /* AvoidingKeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A757C4EC886121126506F8959B42A3 /* AvoidingKeyboardLayoutConstraint.swift */; };
+		C31FC166703BC4042A2F9EAAC66E005A /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C04469FF9459371915D99692B5EAB04 /* NSArray+PureLayout.m */; };
+		C41A944369753DE60792D9929136FB78 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = C01D6D8FC41BCB5C2029498ADD113B5A /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = D87A1ECB0591E3DDB164D06D4C28149A /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C52623ED78EAB0C0E2225A43B645E224 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AC10ED05C29DC852E13830CC59168 /* Configurations.swift */; };
+		C882286CD42D79F07AD8CBEEF5FE938B /* TransakSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FFC4ECDEB2AFA0FF9DB4A609D26303 /* TransakSwift-dummy.m */; };
+		CA63ADACAC6C2BF1E30108E6BEF68A09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC16EB5E289B2E78C0E52A9E6089E495 /* Foundation.framework */; };
+		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B2A9295AB9FBC120B1FB7B696090CA /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D11EA04CADB48382E35C8A331F44CCE7 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9C0CC2D716BCC0F096C0E1A9BD6083 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5D7B797DB0880FCA31D77D4E3AE9BE3 /* BERoundedCornerShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFDABBAED197681D63117BA63667B22 /* BERoundedCornerShadowView.swift */; };
+		D98A0EC5288A58761E71272611BF072B /* BEDecimalTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73EDFD20219D04ED28B86F2A85053E8 /* BEDecimalTextField.swift */; };
+		D9EC7408890EED973733E127F1057709 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 50395F4C149683DF3B2F4EA0676BC4D0 /* NSLayoutConstraint+PureLayout.m */; };
+		DD2F4240C3686C882991CF14B09DCDFC /* UITextView+PureLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94674A513AB4A7689834E2C08A0C4AA5 /* UITextView+PureLayout.swift */; };
+		E352AA2A69D6B3CE790E5C610A76F888 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = B735E3D4A748AACE55C9FD1C302204F8 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6E507403D0C96C314762479234A1AF2 /* UIView+PureLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D7D04D586D426449B12E49F4B2FF98 /* UIView+PureLayout.swift */; };
+		E882E37AEDA89A8615589CCC5681D29B /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0C37124CB83BCF582D0111DABE45B /* UIViewControllerPreview.swift */; };
+		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CDE5550E4A8C14A56EB357817FD4AF /* FBSnapshotTestCasePlatform.m */; };
+		ECF24C6DAC3AD87D17AE9AB658F8F584 /* UIStackView+PureLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A498C4418FFF072D3DA3E5B445443E0 /* UIStackView+PureLayout.swift */; };
+		EE334FA79D742DD9BA2DD96C9C250D9E /* BEStrokeColorAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97F72A9FF34668E80AFD1B07B540E4 /* BEStrokeColorAnimation.swift */; };
+		EF132D1C56CEE22D929DCBA7AE252A97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC16EB5E289B2E78C0E52A9E6089E495 /* Foundation.framework */; };
+		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A5295C6B870F73059F678C503483F16 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F1D1E7072C6FB7A1493DC133FBE46763 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC16EB5E289B2E78C0E52A9E6089E495 /* Foundation.framework */; };
+		F40D9E95B5F1CC77EAB7D6267A809CB8 /* Pods-TransakSwift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBDBBD87B3FFD8FE759B02959C33460 /* Pods-TransakSwift_Example-dummy.m */; };
+		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D419D1BF98E86C7B5B14585DDADB52D6 /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		09FC655E4264B95F6C4A324B5C2B7C9B /* PBXContainerItemProxy */ = {
+		17E2745F2FE12643A02CC70F63709228 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4D4BE6D82C46DF45B46F6F8938F1DA6A;
-			remoteInfo = TransakSwift;
+			remoteGlobalIDString = 06F5CDD6235E25837519792853B145A1;
+			remoteInfo = PureLayout;
 		};
-		CC95CAE6F53863A6CC60AD17ECE79AE9 /* PBXContainerItemProxy */ = {
+		28EF125F37A8C46EC8C504CB2659958F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0128461763FA1CABD5D2B4E7884BFF5A;
+			remoteInfo = BEPureLayout;
+		};
+		557F85DF1EF79C4B2A4B4C8AA3145770 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9B5E22AC5F86474EF9579C9A2357D8E9;
 			remoteInfo = "Pods-TransakSwift_Example";
 		};
-		F0B8BC2D2882F29F3009BF9E826A2602 /* PBXContainerItemProxy */ = {
+		811842F16AA8D54E2047DC61F97E930C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
 			remoteInfo = FBSnapshotTestCase;
 		};
+		E954C700D903EC857E055E65062E4636 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06F5CDD6235E25837519792853B145A1;
+			remoteInfo = PureLayout;
+		};
+		FDE9B38E5D6EF64A554A6093BA4C922E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D4BE6D82C46DF45B46F6F8938F1DA6A;
+			remoteInfo = TransakSwift;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BE5E500CC667C9115015344EA48083A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
-		199BB32B9303A9E912A2826E900FC818 /* TransakSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TransakSwift-Info.plist"; sourceTree = "<group>"; };
-		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
-		1CDD72FA16FC424992CDF84938E0F48B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
-		2718552C115E629AF25852C926EA587F /* TransakSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransakSwift-prefix.pch"; sourceTree = "<group>"; };
-		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
-		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		03B9762733EF25807652AE35C9801E55 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
+		048ACBCA5B4E9CB078564BB2421DE15E /* PureLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.debug.xcconfig; sourceTree = "<group>"; };
+		071D382FFFEF7F760FB34DD7EA1B111C /* TransakViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransakViewController.swift; path = TransakSwift/Classes/TransakViewController.swift; sourceTree = "<group>"; };
+		0A498C4418FFF072D3DA3E5B445443E0 /* UIStackView+PureLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStackView+PureLayout.swift"; path = "BEPureLayout/Classes/UIStackView+PureLayout.swift"; sourceTree = "<group>"; };
+		0C04469FF9459371915D99692B5EAB04 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		0CF6388E2DE3DF81C01648DA4F054AA7 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D6FD1425241C8D6A8794A53FF014DAE /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
+		0D8D8AC5D7BD91F5B5D0720CBE56B0DF /* UILabel+PureLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+PureLayout.swift"; path = "BEPureLayout/Classes/UILabel+PureLayout.swift"; sourceTree = "<group>"; };
+		129E07B40BF65F75B0099F486B9C34BA /* BEPureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEPureLayout-umbrella.h"; sourceTree = "<group>"; };
+		17B38BE7164481B9F4EDC137AB8DA6D6 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PureLayout.modulemap; sourceTree = "<group>"; };
+		18F0C37124CB83BCF582D0111DABE45B /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewControllerPreview.swift; path = BEPureLayout/Classes/UIViewControllerPreview.swift; sourceTree = "<group>"; };
+		1A5295C6B870F73059F678C503483F16 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		1AEF9D09DA205E094B7D7EB603AE763E /* BEViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BEViewController.swift; path = BEPureLayout/Classes/BEViewController.swift; sourceTree = "<group>"; };
+		1DADB5F494358266F06E995B1EE31817 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		243A41BD8562116A1B1878D672FD0E9E /* BENavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BENavigationController.swift; path = BEPureLayout/Classes/BENavigationController.swift; sourceTree = "<group>"; };
+		253E6E4597A08CDE1ACA48E7A5E907F8 /* BEStackViewBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BEStackViewBuilder.swift; path = BEPureLayout/Classes/BEStackViewBuilder.swift; sourceTree = "<group>"; };
+		27B2A9295AB9FBC120B1FB7B696090CA /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		29EEB4C120640258E1427FFB77E80847 /* Pods-TransakSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TransakSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		2D5276E4EDF362CD8075BAF7A370BC96 /* Numeric+PureLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Numeric+PureLayout.swift"; path = "BEPureLayout/Classes/Numeric+PureLayout.swift"; sourceTree = "<group>"; };
+		2D9E6C6EEB406A3EEDD89BB6B28BB00B /* BEPureLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BEPureLayout.debug.xcconfig; sourceTree = "<group>"; };
 		3586E222A5928170706F75B8C6F28431 /* TransakSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TransakSwift.framework; path = TransakSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39333DEC18896744B2589A4554C55294 /* TransakSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransakSwift-prefix.pch"; sourceTree = "<group>"; };
 		3A04177337EA2D25AB88390F01691831 /* Pods-TransakSwift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TransakSwift_Tests.modulemap"; sourceTree = "<group>"; };
+		3BE280A94315B3B40519512CBA490338 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		3CB06A34FFC59D7F6B5B5EE19F749F9A /* Pods-TransakSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TransakSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3EBF6D25ACDAD11FC16E1C9620350C18 /* Pods-TransakSwift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TransakSwift_Tests-Info.plist"; sourceTree = "<group>"; };
-		3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		3F70F50094E0D0922397B602921D105F /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
+		3F97F72A9FF34668E80AFD1B07B540E4 /* BEStrokeColorAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BEStrokeColorAnimation.swift; path = BEPureLayout/Classes/Animations/BEStrokeColorAnimation.swift; sourceTree = "<group>"; };
 		3FBDBBD87B3FFD8FE759B02959C33460 /* Pods-TransakSwift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TransakSwift_Example-dummy.m"; sourceTree = "<group>"; };
-		4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
-		4817DF0177D7FD166DC6BA4AC54DF5AA /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = TransakSwift/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		49CBA109A06EC0F88DCCC34785B9DDD0 /* TransakSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TransakSwift.release.xcconfig; sourceTree = "<group>"; };
-		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
+		403494A16DA1C83544AA51760C92B34B /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		4069315B45613F16FD3D9CFB243DCEE4 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		479A8C29DD13A9905A4C66A11ABF3723 /* TransakSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TransakSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4E7A03F8105C2260CF21DFAC05471C1E /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
 		4F46473BE86C9917269FB6D1D27DD9BA /* Pods-TransakSwift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TransakSwift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		50395F4C149683DF3B2F4EA0676BC4D0 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
 		51D9EAAFE91EA13539096FAD61A172B7 /* Pods-TransakSwift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TransakSwift_Example.modulemap"; sourceTree = "<group>"; };
-		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		53EAD9DF14253F3A9081F4F7D7A377B6 /* BESpinnerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BESpinnerView.swift; path = BEPureLayout/Classes/BESpinnerView.swift; sourceTree = "<group>"; };
+		546D603AB263B61F4EB97C5BEAA4174D /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		546FCA04EC1665115D2FF9660C5124BD /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		54F002AE62879661787BE21067961628 /* BEPagesVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BEPagesVC.swift; path = BEPureLayout/Classes/BEPagesVC.swift; sourceTree = "<group>"; };
+		58FFC4ECDEB2AFA0FF9DB4A609D26303 /* TransakSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TransakSwift-dummy.m"; sourceTree = "<group>"; };
+		5A57E6519C9251A99E43AA9DAACFF6AD /* BEView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BEView.swift; path = BEPureLayout/Classes/BEView.swift; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		637CBAB5F12BE5CB3D0921629B54A8C0 /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutConstraint+Extensions.swift"; path = "BEPureLayout/Classes/NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
+		64D5518D1D628004D876BD93C3BF2B4A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		661875A46EF9BC426A4D8D108E49ABAB /* Pods_TransakSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TransakSwift_Tests.framework; path = "Pods-TransakSwift_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6651D0CF105B368EEEA9D0C06F68DDAD /* ContentHuggingScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentHuggingScrollView.swift; path = BEPureLayout/Classes/ContentHuggingScrollView.swift; sourceTree = "<group>"; };
 		66A7FA39B18C0135917DCCF6CEC5C4F4 /* Pods-TransakSwift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TransakSwift_Example-frameworks.sh"; sourceTree = "<group>"; };
-		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		68B21923436474103D6AF1E1665A9C54 /* BEPureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BEPureLayout.modulemap; sourceTree = "<group>"; };
+		68D7D04D586D426449B12E49F4B2FF98 /* UIView+PureLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PureLayout.swift"; path = "BEPureLayout/Classes/UIView+PureLayout.swift"; sourceTree = "<group>"; };
+		6B5C1C57AB70A86CF9CD54EF0C0818CF /* UIImageView+PureLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+PureLayout.swift"; path = "BEPureLayout/Classes/UIImageView+PureLayout.swift"; sourceTree = "<group>"; };
+		6C359C06FD4F6C542609EE2E936EEFAE /* PureLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PureLayout-Info.plist"; sourceTree = "<group>"; };
 		6CF5184768AB3C0731EE3F20696D0EC3 /* Pods_TransakSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TransakSwift_Example.framework; path = "Pods-TransakSwift_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D26E12BDECA055F37C9983F7E103E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		72AB4C9F65D7EF6264542064631AFF23 /* Pods-TransakSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TransakSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
+		75C1B63889AB3B0A1392CDBB1CB016CB /* BEStrokeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BEStrokeAnimation.swift; path = BEPureLayout/Classes/Animations/BEStrokeAnimation.swift; sourceTree = "<group>"; };
 		7723F186242B303AD75E091B381706B4 /* Pods-TransakSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TransakSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7B818BB372AC088EF37A2D623955FE80 /* TransakSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TransakSwift.debug.xcconfig; sourceTree = "<group>"; };
+		787E90DB58F36CDE3C5732F45409D365 /* UITextField+PureLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+PureLayout.swift"; path = "BEPureLayout/Classes/UITextField+PureLayout.swift"; sourceTree = "<group>"; };
+		788DC93694B4800ED076004045A04416 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		7AFDABBAED197681D63117BA63667B22 /* BERoundedCornerShadowView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BERoundedCornerShadowView.swift; path = BEPureLayout/Classes/BERoundedCornerShadowView.swift; sourceTree = "<group>"; };
+		7D2629115707DC57B47589E2A455BBE2 /* UIButton+PureLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+PureLayout.swift"; path = "BEPureLayout/Classes/UIButton+PureLayout.swift"; sourceTree = "<group>"; };
+		7D3FF64AF51F31C92B8D59164534A9AB /* BEPureLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BEPureLayout.release.xcconfig; sourceTree = "<group>"; };
 		7D5B20684676CDB63B508E449AFBC79A /* Pods-TransakSwift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TransakSwift_Tests-umbrella.h"; sourceTree = "<group>"; };
-		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
-		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		81C539A60C9F4297FB39BDDA39E53912 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		84A3433D73A20B912866682F03B9A44D /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
+		89B6377264787F1FA1C4C3C1F9E00A31 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		89E265B7415E65C44C7B83A0782B8627 /* TransakSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TransakSwift-Info.plist"; sourceTree = "<group>"; };
+		8C8B3F08B90D3703B73344D3A07E9CAF /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		8EFE62FA9D7387B5CA6F15537DABCBD0 /* Pods-TransakSwift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TransakSwift_Example-umbrella.h"; sourceTree = "<group>"; };
-		90ED232C0205889E2FF6A1EC99B20EBE /* TransakSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TransakSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
-		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
-		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
+		94674A513AB4A7689834E2C08A0C4AA5 /* UITextView+PureLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+PureLayout.swift"; path = "BEPureLayout/Classes/UITextView+PureLayout.swift"; sourceTree = "<group>"; };
+		99DCDEDD0FA765721CCDC48B1954885D /* TransakSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TransakSwift.modulemap; sourceTree = "<group>"; };
+		9BD2D4BD554290E420A41D4D271C6B8B /* BETableHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BETableHeaderView.swift; path = BEPureLayout/Classes/BETableHeaderView.swift; sourceTree = "<group>"; };
+		9CAD9EB3F4307840181CECE32A335A37 /* Image.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Image.xcassets; path = BEPureLayout/Assets/Image.xcassets; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E5DF26C45312E8B1DF92A7A4D1DD240 /* Pods-TransakSwift_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TransakSwift_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		9FBC731EAA53D9557310539354A5682D /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		A0938B524498629119389CA64B704B73 /* BEDimmingPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BEDimmingPresentationController.swift; path = BEPureLayout/Classes/PresentationControllers/BEDimmingPresentationController.swift; sourceTree = "<group>"; };
 		A0B7236A10155700742A2D165818DC33 /* Pods-TransakSwift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TransakSwift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A1CDE5550E4A8C14A56EB357817FD4AF /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		A6CB2589D7AA6F2B25EB7AA641D3F3FA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A86E621FFD7F8E1D5D4BA6D35E84551D /* BEPureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BEPureLayout.framework; path = BEPureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A926343BAF699C7BE486F6E72A0E65EC /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		A9C0815A73A53E0E2D3B3D4E7FA41B28 /* Pods-TransakSwift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TransakSwift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		AB9C0CC2D716BCC0F096C0E1A9BD6083 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+		AC7512A8B3F905C9CF9BC18B13AC2077 /* BERotationAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BERotationAnimation.swift; path = BEPureLayout/Classes/Animations/BERotationAnimation.swift; sourceTree = "<group>"; };
+		AE0AC10ED05C29DC852E13830CC59168 /* Configurations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configurations.swift; path = BEPureLayout/Classes/Configurations.swift; sourceTree = "<group>"; };
 		AF300E6E84E663EDAAC306CB27DEAF0F /* Pods-TransakSwift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TransakSwift_Example-Info.plist"; sourceTree = "<group>"; };
-		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
-		C2D6512E5ADE11AA04479BF6EB9DCF69 /* TransakSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TransakSwift-dummy.m"; sourceTree = "<group>"; };
-		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		B11CA767A02F424090E16E6B1F39FAA7 /* BEPureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BEPureLayout-dummy.m"; sourceTree = "<group>"; };
+		B735E3D4A748AACE55C9FD1C302204F8 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		BDF92CEE6F7F637A50C89097573AFAD6 /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		C01D6D8FC41BCB5C2029498ADD113B5A /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		C25911DC57F9CA9D12C5CBB7DD6CFF58 /* UIView+LayoutAnchor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+LayoutAnchor.swift"; path = "BEPureLayout/Classes/UIView+LayoutAnchor.swift"; sourceTree = "<group>"; };
+		C2E9B5856594A836F56BF1D515A770AB /* TransakSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TransakSwift.release.xcconfig; sourceTree = "<group>"; };
+		C49C0829150021FC4F576BA102B38701 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		C6FD9C9AB35F8EEF3BB60802A5D21D29 /* BECheckBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BECheckBox.swift; path = BEPureLayout/Classes/BECheckBox.swift; sourceTree = "<group>"; };
+		D0072DCF571F18512A3B99FFF4B8C078 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		D0094C28C5F9F353C7F5611502BD9A7F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		D419D1BF98E86C7B5B14585DDADB52D6 /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		D723ABF84107BAB81284BE138F4168E1 /* BESearchBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BESearchBar.swift; path = BEPureLayout/Classes/BESearchBar.swift; sourceTree = "<group>"; };
+		D87A1ECB0591E3DDB164D06D4C28149A /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		DACCCC014969853A52CF0F923F1EE0BD /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
 		DC1182F57857A363B76A1329BE71FD34 /* Pods-TransakSwift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TransakSwift_Tests-dummy.m"; sourceTree = "<group>"; };
 		E02511A00E24B47B74B2C49722949F9F /* Pods-TransakSwift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TransakSwift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E47BE211EE17B20F0DE717096F9F1903 /* TransakSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransakSwift-umbrella.h"; sourceTree = "<group>"; };
-		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F8B0DAD39D80F317E0E4C8C05F8F9470 /* TransakSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TransakSwift.modulemap; sourceTree = "<group>"; };
-		FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		E156F936C9F83D47565D6CA8065FC0C2 /* PureLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.release.xcconfig; sourceTree = "<group>"; };
+		E26F2A438C330D229902FE731AED1765 /* BEPureLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BEPureLayout-Info.plist"; sourceTree = "<group>"; };
+		E3A757C4EC886121126506F8959B42A3 /* AvoidingKeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AvoidingKeyboardLayoutConstraint.swift; path = BEPureLayout/Classes/AvoidingKeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		E4E7B3DD46ABB0DBBB56BD5AE90E4911 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5915B5434D0990F6325B668D1DB5554 /* TransakSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransakSwift-umbrella.h"; sourceTree = "<group>"; };
+		E9DC16ADDAC2F7DE7EB4D19765F2BE07 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		EBAD8BB79DBA77EC4A61E0834347F6EA /* UIEdgeInsets+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIEdgeInsets+Extensions.swift"; path = "BEPureLayout/Classes/UIEdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
+		ED8FDFF73F0D9C1D6960F6E32DEE2059 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		F11A15C01D1E2B5170C50B2231E29E8C /* TransakSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TransakSwift.debug.xcconfig; sourceTree = "<group>"; };
+		F11BA94E4DAD9A89FD1C7623D542A337 /* BEPureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEPureLayout-prefix.pch"; sourceTree = "<group>"; };
+		F3610F991BF0ABA6A037C306452EC53A /* Navigation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Navigation.swift; path = BEPureLayout/Classes/Navigation.swift; sourceTree = "<group>"; };
+		F523DCCDF7701EE31594305D88289372 /* UIView+UIStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+UIStackView.swift"; path = "BEPureLayout/Classes/UIView+UIStackView.swift"; sourceTree = "<group>"; };
+		F52479A579E0DEFB6E2C77C3BF4AC2B0 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		F73EDFD20219D04ED28B86F2A85053E8 /* BEDecimalTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BEDecimalTextField.swift; path = BEPureLayout/Classes/BEDecimalTextField.swift; sourceTree = "<group>"; };
+		FC16EB5E289B2E78C0E52A9E6089E495 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FC3E77B11D01DE6807662DFB2A953ADE /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		10A8D401A36297BD5AB99F8C3C4A6B64 /* Frameworks */ = {
+		347E7B1FB6D446F73DAA69142F64F985 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				320E27368CB1021CE85A1AA37CC6F424 /* Foundation.framework in Frameworks */,
+				A884FD94C86F3F7087008D29177CB97F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60A0D189F863E813387789033BC2EAE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDB2FA9744DFD71DE5A9FF683FFBA9D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B98E2D0233D855711121169FAC0CCD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D1E7072C6FB7A1493DC133FBE46763 /* Foundation.framework in Frameworks */,
+				A9CA5D0ED9E38308C4E47AEB2E54FA5B /* PureLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,26 +312,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		168399B4D1B3A20DE7CFD3DAD2A92099 /* TransakSwift */ = {
+		2D15FB5EB565F59492E13B18E3F7B7BF /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				4817DF0177D7FD166DC6BA4AC54DF5AA /* ReplaceMe.swift */,
-				DC4386EAD950B051DF1D13B805FA2A9B /* Pod */,
-				A6AF8E3B147696FC9CD0580D53E1E990 /* Support Files */,
+				F52479A579E0DEFB6E2C77C3BF4AC2B0 /* FBSnapshotTestCase.h */,
+				403494A16DA1C83544AA51760C92B34B /* FBSnapshotTestCase.m */,
+				D87A1ECB0591E3DDB164D06D4C28149A /* FBSnapshotTestCasePlatform.h */,
+				A1CDE5550E4A8C14A56EB357817FD4AF /* FBSnapshotTestCasePlatform.m */,
+				D0072DCF571F18512A3B99FFF4B8C078 /* FBSnapshotTestController.h */,
+				546D603AB263B61F4EB97C5BEAA4174D /* FBSnapshotTestController.m */,
+				3F70F50094E0D0922397B602921D105F /* UIApplication+StrictKeyWindow.h */,
+				788DC93694B4800ED076004045A04416 /* UIApplication+StrictKeyWindow.m */,
+				1A5295C6B870F73059F678C503483F16 /* UIImage+Compare.h */,
+				FC3E77B11D01DE6807662DFB2A953ADE /* UIImage+Compare.m */,
+				27B2A9295AB9FBC120B1FB7B696090CA /* UIImage+Diff.h */,
+				C49C0829150021FC4F576BA102B38701 /* UIImage+Diff.m */,
+				81C539A60C9F4297FB39BDDA39E53912 /* UIImage+Snapshot.h */,
+				8C8B3F08B90D3703B73344D3A07E9CAF /* UIImage+Snapshot.m */,
 			);
-			name = TransakSwift;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		29F1C297C3909E194F07E6106B766BC7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */,
-				6CF5184768AB3C0731EE3F20696D0EC3 /* Pods_TransakSwift_Example.framework */,
-				661875A46EF9BC426A4D8D108E49ABAB /* Pods_TransakSwift_Tests.framework */,
-				3586E222A5928170706F75B8C6F28431 /* TransakSwift.framework */,
-			);
-			name = Products;
+			name = Core;
 			sourceTree = "<group>";
 		};
 		37C0F6E6FDDCC15E8A94F7CD2BC8AF61 /* Pods-TransakSwift_Tests */ = {
@@ -205,25 +350,69 @@
 			path = "Target Support Files/Pods-TransakSwift_Tests";
 			sourceTree = "<group>";
 		};
-		4BA2479549DD918290454B1CDCD0B92B /* Core */ = {
+		37F9CFF5AD677C8ED0C1A3767CCBCEDA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */,
-				277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */,
-				88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */,
-				6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */,
-				AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */,
-				7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */,
-				99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */,
-				0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */,
-				656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */,
-				235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */,
-				96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */,
-				4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */,
-				284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */,
-				D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */,
+				C7902051B20369FE95E15112E7837251 /* BEPureLayout */,
+				48F21F382953FE9D78E9ED182E1C5421 /* FBSnapshotTestCase */,
+				47B1B867D1F37DAA124A7F1A929B84F9 /* PureLayout */,
 			);
-			name = Core;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		47B1B867D1F37DAA124A7F1A929B84F9 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				4E7A03F8105C2260CF21DFAC05471C1E /* ALView+PureLayout.h */,
+				546FCA04EC1665115D2FF9660C5124BD /* ALView+PureLayout.m */,
+				9FBC731EAA53D9557310539354A5682D /* NSArray+PureLayout.h */,
+				0C04469FF9459371915D99692B5EAB04 /* NSArray+PureLayout.m */,
+				ED8FDFF73F0D9C1D6960F6E32DEE2059 /* NSLayoutConstraint+PureLayout.h */,
+				50395F4C149683DF3B2F4EA0676BC4D0 /* NSLayoutConstraint+PureLayout.m */,
+				AB9C0CC2D716BCC0F096C0E1A9BD6083 /* PureLayout.h */,
+				C01D6D8FC41BCB5C2029498ADD113B5A /* PureLayout+Internal.h */,
+				B735E3D4A748AACE55C9FD1C302204F8 /* PureLayoutDefines.h */,
+				6146CE43C0A7961E75363BFF0E56DBD1 /* Support Files */,
+			);
+			name = PureLayout;
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		48F21F382953FE9D78E9ED182E1C5421 /* FBSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				2D15FB5EB565F59492E13B18E3F7B7BF /* Core */,
+				DA456C4DFB73003E70CD667629E24C6E /* Support Files */,
+				AECCB4D249D78C343A5F48D5AD5CBA7E /* SwiftSupport */,
+			);
+			name = FBSnapshotTestCase;
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		541E77CE83AA0C4660EC4091292EA1C5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FC16EB5E289B2E78C0E52A9E6089E495 /* Foundation.framework */,
+				D0094C28C5F9F353C7F5611502BD9A7F /* QuartzCore.framework */,
+				71D26E12BDECA055F37C9983F7E103E9 /* UIKit.framework */,
+				64D5518D1D628004D876BD93C3BF2B4A /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6146CE43C0A7961E75363BFF0E56DBD1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				17B38BE7164481B9F4EDC137AB8DA6D6 /* PureLayout.modulemap */,
+				DACCCC014969853A52CF0F923F1EE0BD /* PureLayout-dummy.m */,
+				6C359C06FD4F6C542609EE2E936EEFAE /* PureLayout-Info.plist */,
+				E9DC16ADDAC2F7DE7EB4D19765F2BE07 /* PureLayout-prefix.pch */,
+				BDF92CEE6F7F637A50C89097573AFAD6 /* PureLayout-umbrella.h */,
+				048ACBCA5B4E9CB078564BB2421DE15E /* PureLayout.debug.xcconfig */,
+				E156F936C9F83D47565D6CA8065FC0C2 /* PureLayout.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
 			sourceTree = "<group>";
 		};
 		76A83B705F7424F30877581A7D140A57 /* Targets Support Files */ = {
@@ -235,69 +424,133 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		838BB1D215824AB66472CE19280E1D89 /* Development Pods */ = {
+		81F7EE9BCD597B03B90CEB2195EE4C08 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				168399B4D1B3A20DE7CFD3DAD2A92099 /* TransakSwift */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */ = {
-			isa = PBXGroup;
-			children = (
-				3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */,
-			);
-			name = SwiftSupport;
-			sourceTree = "<group>";
-		};
-		A6AF8E3B147696FC9CD0580D53E1E990 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F8B0DAD39D80F317E0E4C8C05F8F9470 /* TransakSwift.modulemap */,
-				C2D6512E5ADE11AA04479BF6EB9DCF69 /* TransakSwift-dummy.m */,
-				199BB32B9303A9E912A2826E900FC818 /* TransakSwift-Info.plist */,
-				2718552C115E629AF25852C926EA587F /* TransakSwift-prefix.pch */,
-				E47BE211EE17B20F0DE717096F9F1903 /* TransakSwift-umbrella.h */,
-				7B818BB372AC088EF37A2D623955FE80 /* TransakSwift.debug.xcconfig */,
-				49CBA109A06EC0F88DCCC34785B9DDD0 /* TransakSwift.release.xcconfig */,
+				99DCDEDD0FA765721CCDC48B1954885D /* TransakSwift.modulemap */,
+				58FFC4ECDEB2AFA0FF9DB4A609D26303 /* TransakSwift-dummy.m */,
+				89E265B7415E65C44C7B83A0782B8627 /* TransakSwift-Info.plist */,
+				39333DEC18896744B2589A4554C55294 /* TransakSwift-prefix.pch */,
+				E5915B5434D0990F6325B668D1DB5554 /* TransakSwift-umbrella.h */,
+				F11A15C01D1E2B5170C50B2231E29E8C /* TransakSwift.debug.xcconfig */,
+				C2E9B5856594A836F56BF1D515A770AB /* TransakSwift.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/TransakSwift";
 			sourceTree = "<group>";
 		};
-		B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */ = {
+		838BB1D215824AB66472CE19280E1D89 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */,
-				1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */,
-				B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */,
-				D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */,
-				8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */,
-				9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */,
-				4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */,
+				8FE654F04F3DC6A6F0A167A3C90022C3 /* TransakSwift */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/FBSnapshotTestCase";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+		8FE654F04F3DC6A6F0A167A3C90022C3 /* TransakSwift */ = {
 			isa = PBXGroup;
 			children = (
-				FB2668559AE577E6E8078C0C291AD417 /* iOS */,
+				071D382FFFEF7F760FB34DD7EA1B111C /* TransakViewController.swift */,
+				DF448B8CB9682664BDAF5795D49E6AAF /* Pod */,
+				81F7EE9BCD597B03B90CEB2195EE4C08 /* Support Files */,
+			);
+			name = TransakSwift;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		9196242F7DDEEB9753834F99EBCB631B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CF6388E2DE3DF81C01648DA4F054AA7 /* PureLayout.framework */,
+				541E77CE83AA0C4660EC4091292EA1C5 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BD2D60DE56CBB8C87BA07E0C1CCD0592 /* FBSnapshotTestCase */ = {
+		9C6F540568286251608C1B994F34E3FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4BA2479549DD918290454B1CDCD0B92B /* Core */,
-				B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */,
-				906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */,
+				A86E621FFD7F8E1D5D4BA6D35E84551D /* BEPureLayout.framework */,
+				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */,
+				6CF5184768AB3C0731EE3F20696D0EC3 /* Pods_TransakSwift_Example.framework */,
+				661875A46EF9BC426A4D8D108E49ABAB /* Pods_TransakSwift_Tests.framework */,
+				E4E7B3DD46ABB0DBBB56BD5AE90E4911 /* PureLayout.framework */,
+				3586E222A5928170706F75B8C6F28431 /* TransakSwift.framework */,
 			);
-			name = FBSnapshotTestCase;
-			path = FBSnapshotTestCase;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DFFFEF48B8761060C092984C7C7AA38 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9CAD9EB3F4307840181CECE32A335A37 /* Image.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AECCB4D249D78C343A5F48D5AD5CBA7E /* SwiftSupport */ = {
+			isa = PBXGroup;
+			children = (
+				89B6377264787F1FA1C4C3C1F9E00A31 /* SwiftSupport.swift */,
+			);
+			name = SwiftSupport;
+			sourceTree = "<group>";
+		};
+		AF2A6B722FEB37DEF8D2AEF217E95CB6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				68B21923436474103D6AF1E1665A9C54 /* BEPureLayout.modulemap */,
+				B11CA767A02F424090E16E6B1F39FAA7 /* BEPureLayout-dummy.m */,
+				E26F2A438C330D229902FE731AED1765 /* BEPureLayout-Info.plist */,
+				F11BA94E4DAD9A89FD1C7623D542A337 /* BEPureLayout-prefix.pch */,
+				129E07B40BF65F75B0099F486B9C34BA /* BEPureLayout-umbrella.h */,
+				2D9E6C6EEB406A3EEDD89BB6B28BB00B /* BEPureLayout.debug.xcconfig */,
+				7D3FF64AF51F31C92B8D59164534A9AB /* BEPureLayout.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BEPureLayout";
+			sourceTree = "<group>";
+		};
+		C7902051B20369FE95E15112E7837251 /* BEPureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				E3A757C4EC886121126506F8959B42A3 /* AvoidingKeyboardLayoutConstraint.swift */,
+				C6FD9C9AB35F8EEF3BB60802A5D21D29 /* BECheckBox.swift */,
+				F73EDFD20219D04ED28B86F2A85053E8 /* BEDecimalTextField.swift */,
+				A0938B524498629119389CA64B704B73 /* BEDimmingPresentationController.swift */,
+				243A41BD8562116A1B1878D672FD0E9E /* BENavigationController.swift */,
+				54F002AE62879661787BE21067961628 /* BEPagesVC.swift */,
+				AC7512A8B3F905C9CF9BC18B13AC2077 /* BERotationAnimation.swift */,
+				7AFDABBAED197681D63117BA63667B22 /* BERoundedCornerShadowView.swift */,
+				D723ABF84107BAB81284BE138F4168E1 /* BESearchBar.swift */,
+				53EAD9DF14253F3A9081F4F7D7A377B6 /* BESpinnerView.swift */,
+				253E6E4597A08CDE1ACA48E7A5E907F8 /* BEStackViewBuilder.swift */,
+				75C1B63889AB3B0A1392CDBB1CB016CB /* BEStrokeAnimation.swift */,
+				3F97F72A9FF34668E80AFD1B07B540E4 /* BEStrokeColorAnimation.swift */,
+				9BD2D4BD554290E420A41D4D271C6B8B /* BETableHeaderView.swift */,
+				5A57E6519C9251A99E43AA9DAACFF6AD /* BEView.swift */,
+				1AEF9D09DA205E094B7D7EB603AE763E /* BEViewController.swift */,
+				AE0AC10ED05C29DC852E13830CC59168 /* Configurations.swift */,
+				6651D0CF105B368EEEA9D0C06F68DDAD /* ContentHuggingScrollView.swift */,
+				F3610F991BF0ABA6A037C306452EC53A /* Navigation.swift */,
+				637CBAB5F12BE5CB3D0921629B54A8C0 /* NSLayoutConstraint+Extensions.swift */,
+				2D5276E4EDF362CD8075BAF7A370BC96 /* Numeric+PureLayout.swift */,
+				7D2629115707DC57B47589E2A455BBE2 /* UIButton+PureLayout.swift */,
+				EBAD8BB79DBA77EC4A61E0834347F6EA /* UIEdgeInsets+Extensions.swift */,
+				6B5C1C57AB70A86CF9CD54EF0C0818CF /* UIImageView+PureLayout.swift */,
+				0D8D8AC5D7BD91F5B5D0720CBE56B0DF /* UILabel+PureLayout.swift */,
+				0A498C4418FFF072D3DA3E5B445443E0 /* UIStackView+PureLayout.swift */,
+				787E90DB58F36CDE3C5732F45409D365 /* UITextField+PureLayout.swift */,
+				94674A513AB4A7689834E2C08A0C4AA5 /* UITextView+PureLayout.swift */,
+				C25911DC57F9CA9D12C5CBB7DD6CFF58 /* UIView+LayoutAnchor.swift */,
+				68D7D04D586D426449B12E49F4B2FF98 /* UIView+PureLayout.swift */,
+				F523DCCDF7701EE31594305D88289372 /* UIView+UIStackView.swift */,
+				18F0C37124CB83BCF582D0111DABE45B /* UIViewControllerPreview.swift */,
+				9DFFFEF48B8761060C092984C7C7AA38 /* Resources */,
+				AF2A6B722FEB37DEF8D2AEF217E95CB6 /* Support Files */,
+			);
+			name = BEPureLayout;
+			path = BEPureLayout;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -305,9 +558,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				838BB1D215824AB66472CE19280E1D89 /* Development Pods */,
-				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
-				E81A37DBDE41E671312C56736544E2FA /* Pods */,
-				29F1C297C3909E194F07E6106B766BC7 /* Products */,
+				9196242F7DDEEB9753834F99EBCB631B /* Frameworks */,
+				37F9CFF5AD677C8ED0C1A3767CCBCEDA /* Pods */,
+				9C6F540568286251608C1B994F34E3FC /* Products */,
 				76A83B705F7424F30877581A7D140A57 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -329,33 +582,29 @@
 			path = "Target Support Files/Pods-TransakSwift_Example";
 			sourceTree = "<group>";
 		};
-		DC4386EAD950B051DF1D13B805FA2A9B /* Pod */ = {
+		DA456C4DFB73003E70CD667629E24C6E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1CDD72FA16FC424992CDF84938E0F48B /* LICENSE */,
-				0BE5E500CC667C9115015344EA48083A /* README.md */,
-				90ED232C0205889E2FF6A1EC99B20EBE /* TransakSwift.podspec */,
+				A926343BAF699C7BE486F6E72A0E65EC /* FBSnapshotTestCase.modulemap */,
+				4069315B45613F16FD3D9CFB243DCEE4 /* FBSnapshotTestCase-dummy.m */,
+				03B9762733EF25807652AE35C9801E55 /* FBSnapshotTestCase-Info.plist */,
+				1DADB5F494358266F06E995B1EE31817 /* FBSnapshotTestCase-prefix.pch */,
+				D419D1BF98E86C7B5B14585DDADB52D6 /* FBSnapshotTestCase-umbrella.h */,
+				84A3433D73A20B912866682F03B9A44D /* FBSnapshotTestCase.debug.xcconfig */,
+				0D6FD1425241C8D6A8794A53FF014DAE /* FBSnapshotTestCase.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FBSnapshotTestCase";
+			sourceTree = "<group>";
+		};
+		DF448B8CB9682664BDAF5795D49E6AAF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3BE280A94315B3B40519512CBA490338 /* LICENSE */,
+				A6CB2589D7AA6F2B25EB7AA641D3F3FA /* README.md */,
+				479A8C29DD13A9905A4C66A11ABF3723 /* TransakSwift.podspec */,
 			);
 			name = Pod;
-			sourceTree = "<group>";
-		};
-		E81A37DBDE41E671312C56736544E2FA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BD2D60DE56CBB8C87BA07E0C1CCD0592 /* FBSnapshotTestCase */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FB2668559AE577E6E8078C0C291AD417 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */,
-				3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */,
-				1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */,
-				E658F388F01C72599CA75537950B6095 /* XCTest.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,11 +625,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		548264E5E27F528A628C93515A339262 /* Headers */ = {
+		3EE4C83F8E15D444AC6ADC0D168491BF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B570D43DE350CA3A01CE57FA483B6E6 /* Pods-TransakSwift_Example-umbrella.h in Headers */,
+				0B514E5D33FA1FCB91925DAA539C0A04 /* ALView+PureLayout.h in Headers */,
+				172490192B9C6F3570255ACA97D525CC /* NSArray+PureLayout.h in Headers */,
+				42DBDDB43A805C025E3183B836AC49FE /* NSLayoutConstraint+PureLayout.h in Headers */,
+				C41A944369753DE60792D9929136FB78 /* PureLayout+Internal.h in Headers */,
+				B7CFC531CD79B13950204F036858A22A /* PureLayout-umbrella.h in Headers */,
+				D11EA04CADB48382E35C8A331F44CCE7 /* PureLayout.h in Headers */,
+				E352AA2A69D6B3CE790E5C610A76F888 /* PureLayoutDefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6421FA5C604000ED88DA9DF162F06F94 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0634923F6F88A35194FC75663E335E34 /* Pods-TransakSwift_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F66841094E28AF12CEF99F85928FD4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06E4C1F0E0B28D71FC0D1ED155C03007 /* BEPureLayout-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,12 +674,49 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0128461763FA1CABD5D2B4E7884BFF5A /* BEPureLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FD8D4CF0AD2E36E1EA1B1D20E771D28 /* Build configuration list for PBXNativeTarget "BEPureLayout" */;
+			buildPhases = (
+				9F66841094E28AF12CEF99F85928FD4F /* Headers */,
+				7D86F6C6C0B9F52CCEAE07DF0A1DEB41 /* Sources */,
+				7B98E2D0233D855711121169FAC0CCD9 /* Frameworks */,
+				EDB48DF3CEFA18EDDA2573345819BB5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75E979310986EC7A63736A2C3833F100 /* PBXTargetDependency */,
+			);
+			name = BEPureLayout;
+			productName = BEPureLayout;
+			productReference = A86E621FFD7F8E1D5D4BA6D35E84551D /* BEPureLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		06F5CDD6235E25837519792853B145A1 /* PureLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B23FF2A0BBC2994D08AD49D70DAEBD1A /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildPhases = (
+				3EE4C83F8E15D444AC6ADC0D168491BF /* Headers */,
+				AD430C119E57ED3601140C4C49369B3C /* Sources */,
+				60A0D189F863E813387789033BC2EAE0 /* Frameworks */,
+				9CE83754984D9BC8419D576951483669 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PureLayout;
+			productName = PureLayout;
+			productReference = E4E7B3DD46ABB0DBBB56BD5AE90E4911 /* PureLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		4D4BE6D82C46DF45B46F6F8938F1DA6A /* TransakSwift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1E700AC57CB609C5787CAC786005C3E /* Build configuration list for PBXNativeTarget "TransakSwift" */;
 			buildPhases = (
 				D6E96AB3E46B526162B082802A39BF0A /* Headers */,
-				0DCBEA642BDAD991F9B5AD730136FAE9 /* Sources */,
+				29B61A465C64CC02397C8EA2F0EA1EAD /* Sources */,
 				D5972C7F8BDD102E49214E0D9D349A29 /* Frameworks */,
 				E82E1AFA260C47BE1E91C52789091082 /* Resources */,
 			);
@@ -441,17 +749,19 @@
 		};
 		9B5E22AC5F86474EF9579C9A2357D8E9 /* Pods-TransakSwift_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0969820E324EC9780723C2D3095FEB24 /* Build configuration list for PBXNativeTarget "Pods-TransakSwift_Example" */;
+			buildConfigurationList = 60E6FE23A195C8B2D63C8B88523E1EF1 /* Build configuration list for PBXNativeTarget "Pods-TransakSwift_Example" */;
 			buildPhases = (
-				548264E5E27F528A628C93515A339262 /* Headers */,
-				783EAF1E8BF3D0E96ACA129FF9B75277 /* Sources */,
-				10A8D401A36297BD5AB99F8C3C4A6B64 /* Frameworks */,
-				73B6972755C921D59726B654AB3B69FA /* Resources */,
+				6421FA5C604000ED88DA9DF162F06F94 /* Headers */,
+				E78C878CC8A2A94A0129D6B4CED4F9DC /* Sources */,
+				347E7B1FB6D446F73DAA69142F64F985 /* Frameworks */,
+				BBD01918C6A15A33531D5FA515C01EDD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B4E4F54F63844FC3EF01607B59169AC3 /* PBXTargetDependency */,
+				B2C48213E4ECB98DEDA7000CE7CBADF8 /* PBXTargetDependency */,
+				C32DFCEF813285C1DBDAE7B8FE42EC72 /* PBXTargetDependency */,
+				8E1F09665D7EEBB3369E7A400D210C22 /* PBXTargetDependency */,
 			);
 			name = "Pods-TransakSwift_Example";
 			productName = "Pods-TransakSwift_Example";
@@ -470,8 +780,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				6767F5C6E6A19B070FD04A4A5DD20387 /* PBXTargetDependency */,
-				5A6BFA8B49B9B5885AD10A8C6518ED2F /* PBXTargetDependency */,
+				5822B8FB6746108CEBA2185AA943B00E /* PBXTargetDependency */,
+				C6BAFAA24EC012D312FBDBC5DD9F0927 /* PBXTargetDependency */,
 			);
 			name = "Pods-TransakSwift_Tests";
 			productName = "Pods-TransakSwift_Tests";
@@ -496,13 +806,15 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 29F1C297C3909E194F07E6106B766BC7 /* Products */;
+			productRefGroup = 9C6F540568286251608C1B994F34E3FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				0128461763FA1CABD5D2B4E7884BFF5A /* BEPureLayout */,
 				98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */,
 				9B5E22AC5F86474EF9579C9A2357D8E9 /* Pods-TransakSwift_Example */,
 				DC68C7486E2CED863AB57AB065EB4C6A /* Pods-TransakSwift_Tests */,
+				06F5CDD6235E25837519792853B145A1 /* PureLayout */,
 				4D4BE6D82C46DF45B46F6F8938F1DA6A /* TransakSwift */,
 			);
 		};
@@ -523,7 +835,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73B6972755C921D59726B654AB3B69FA /* Resources */ = {
+		9CE83754984D9BC8419D576951483669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBD01918C6A15A33531D5FA515C01EDD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -537,15 +856,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDB48DF3CEFA18EDDA2573345819BB5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E3010DF24B069CD003ED237B8DD1E08 /* Image.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0DCBEA642BDAD991F9B5AD730136FAE9 /* Sources */ = {
+		29B61A465C64CC02397C8EA2F0EA1EAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F568DDCBD37399DDE3A6C652E44CCF1 /* ReplaceMe.swift in Sources */,
-				3491B3BF5E781B5818EF5B4E21B573B3 /* TransakSwift-dummy.m in Sources */,
+				C882286CD42D79F07AD8CBEEF5FE938B /* TransakSwift-dummy.m in Sources */,
+				471E0035E1B43920A11D7C8A9CE8977F /* TransakViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,11 +884,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		783EAF1E8BF3D0E96ACA129FF9B75277 /* Sources */ = {
+		7D86F6C6C0B9F52CCEAE07DF0A1DEB41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24BB4F20A84FEBB49ABEE73F90962DD8 /* Pods-TransakSwift_Example-dummy.m in Sources */,
+				C17CD866C1183CA7F3C753A15D8BEACE /* AvoidingKeyboardLayoutConstraint.swift in Sources */,
+				10FD357531454B0B8CD724BA57843923 /* BECheckBox.swift in Sources */,
+				D98A0EC5288A58761E71272611BF072B /* BEDecimalTextField.swift in Sources */,
+				4D044A4D6BDC1A7FD8726CC074608F5B /* BEDimmingPresentationController.swift in Sources */,
+				BD9BBB385F64F87845A33B47A0632E5A /* BENavigationController.swift in Sources */,
+				7B146A96623A88E9184E2C7FABF9BFF2 /* BEPagesVC.swift in Sources */,
+				5C73D5F9337D0DB7699F64095F73D63B /* BEPureLayout-dummy.m in Sources */,
+				08F44616F82705E505F52B4109CF0095 /* BERotationAnimation.swift in Sources */,
+				D5D7B797DB0880FCA31D77D4E3AE9BE3 /* BERoundedCornerShadowView.swift in Sources */,
+				786B4853CB92717B18A1543B4F4D985A /* BESearchBar.swift in Sources */,
+				A231C1A9F245D302C0D4E21D540E26E4 /* BESpinnerView.swift in Sources */,
+				87ECEF5381F0ECFE58EB809C5CC71C42 /* BEStackViewBuilder.swift in Sources */,
+				14641F21D4F5A24CA5770856FF4B6E80 /* BEStrokeAnimation.swift in Sources */,
+				EE334FA79D742DD9BA2DD96C9C250D9E /* BEStrokeColorAnimation.swift in Sources */,
+				7AB65A281DB57169B19C273124CD43CB /* BETableHeaderView.swift in Sources */,
+				95D1C42E256C9C6729DFA1D534F7155A /* BEView.swift in Sources */,
+				405978E1ECBC8A4F0BA3D458354C8137 /* BEViewController.swift in Sources */,
+				C52623ED78EAB0C0E2225A43B645E224 /* Configurations.swift in Sources */,
+				58FCB5FFB1EE51B21D92378267CE2C91 /* ContentHuggingScrollView.swift in Sources */,
+				6E407616E96BFDD9D00A042D736B5E13 /* Navigation.swift in Sources */,
+				A334B1BE037E04141B9C651C663DD687 /* NSLayoutConstraint+Extensions.swift in Sources */,
+				878F979C48FCBDA59329D12937912F2C /* Numeric+PureLayout.swift in Sources */,
+				604A95F3E43CB07836304CEC341CB447 /* UIButton+PureLayout.swift in Sources */,
+				1660C784E848EC0C8BC4898A5C15817E /* UIEdgeInsets+Extensions.swift in Sources */,
+				091158C9B27AEAC68CDC8C7AEDCE76EC /* UIImageView+PureLayout.swift in Sources */,
+				4E6074C3189A42F4700733532CE9499C /* UILabel+PureLayout.swift in Sources */,
+				ECF24C6DAC3AD87D17AE9AB658F8F584 /* UIStackView+PureLayout.swift in Sources */,
+				8BDE372ED20231FE7E172555F14DE262 /* UITextField+PureLayout.swift in Sources */,
+				DD2F4240C3686C882991CF14B09DCDFC /* UITextView+PureLayout.swift in Sources */,
+				BDB5B57D43893752AF2BAB34EECCAB48 /* UIView+LayoutAnchor.swift in Sources */,
+				E6E507403D0C96C314762479234A1AF2 /* UIView+PureLayout.swift in Sources */,
+				5D3EF981182B18876F9E408D965BB3CB /* UIView+UIStackView.swift in Sources */,
+				E882E37AEDA89A8615589CCC5681D29B /* UIViewControllerPreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,35 +940,73 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD430C119E57ED3601140C4C49369B3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5225B99A6C416C0197BA90E067E7FB /* ALView+PureLayout.m in Sources */,
+				C31FC166703BC4042A2F9EAAC66E005A /* NSArray+PureLayout.m in Sources */,
+				D9EC7408890EED973733E127F1057709 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				7ECC502ED4CFFF82C88B431F34E088FC /* PureLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E78C878CC8A2A94A0129D6B4CED4F9DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F40D9E95B5F1CC77EAB7D6267A809CB8 /* Pods-TransakSwift_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5A6BFA8B49B9B5885AD10A8C6518ED2F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-TransakSwift_Example";
-			target = 9B5E22AC5F86474EF9579C9A2357D8E9 /* Pods-TransakSwift_Example */;
-			targetProxy = CC95CAE6F53863A6CC60AD17ECE79AE9 /* PBXContainerItemProxy */;
-		};
-		6767F5C6E6A19B070FD04A4A5DD20387 /* PBXTargetDependency */ = {
+		5822B8FB6746108CEBA2185AA943B00E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FBSnapshotTestCase;
 			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
-			targetProxy = F0B8BC2D2882F29F3009BF9E826A2602 /* PBXContainerItemProxy */;
+			targetProxy = 811842F16AA8D54E2047DC61F97E930C /* PBXContainerItemProxy */;
 		};
-		B4E4F54F63844FC3EF01607B59169AC3 /* PBXTargetDependency */ = {
+		75E979310986EC7A63736A2C3833F100 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = 06F5CDD6235E25837519792853B145A1 /* PureLayout */;
+			targetProxy = 17E2745F2FE12643A02CC70F63709228 /* PBXContainerItemProxy */;
+		};
+		8E1F09665D7EEBB3369E7A400D210C22 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TransakSwift;
 			target = 4D4BE6D82C46DF45B46F6F8938F1DA6A /* TransakSwift */;
-			targetProxy = 09FC655E4264B95F6C4A324B5C2B7C9B /* PBXContainerItemProxy */;
+			targetProxy = FDE9B38E5D6EF64A554A6093BA4C922E /* PBXContainerItemProxy */;
+		};
+		B2C48213E4ECB98DEDA7000CE7CBADF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BEPureLayout;
+			target = 0128461763FA1CABD5D2B4E7884BFF5A /* BEPureLayout */;
+			targetProxy = 28EF125F37A8C46EC8C504CB2659958F /* PBXContainerItemProxy */;
+		};
+		C32DFCEF813285C1DBDAE7B8FE42EC72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = 06F5CDD6235E25837519792853B145A1 /* PureLayout */;
+			targetProxy = E954C700D903EC857E055E65062E4636 /* PBXContainerItemProxy */;
+		};
+		C6BAFAA24EC012D312FBDBC5DD9F0927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TransakSwift_Example";
+			target = 9B5E22AC5F86474EF9579C9A2357D8E9 /* Pods-TransakSwift_Example */;
+			targetProxy = 557F85DF1EF79C4B2A4B4C8AA3145770 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0F8EC5010DF3FF623202F899BF3A9C29 /* Release */ = {
+		13C861D2B9D0CDCA00D771943AFC19F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29EEB4C120640258E1427FFB77E80847 /* Pods-TransakSwift_Tests.release.xcconfig */;
+			baseConfigurationReference = 2D9E6C6EEB406A3EEDD89BB6B28BB00B /* BEPureLayout.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -618,91 +1015,25 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TransakSwift_Tests/Pods-TransakSwift_Tests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/BEPureLayout/BEPureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BEPureLayout/BEPureLayout-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TransakSwift_Tests/Pods-TransakSwift_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1ACD40B673F19C48B9E6CBBA69C62000 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49CBA109A06EC0F88DCCC34785B9DDD0 /* TransakSwift.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TransakSwift/TransakSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TransakSwift/TransakSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TransakSwift/TransakSwift.modulemap";
-				PRODUCT_MODULE_NAME = TransakSwift;
-				PRODUCT_NAME = TransakSwift;
+				MODULEMAP_FILE = "Target Support Files/BEPureLayout/BEPureLayout.modulemap";
+				PRODUCT_MODULE_NAME = BEPureLayout;
+				PRODUCT_NAME = BEPureLayout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.4;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		1B19E8AE925692F513EE09BC9421214A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72AB4C9F65D7EF6264542064631AFF23 /* Pods-TransakSwift_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TransakSwift_Example/Pods-TransakSwift_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TransakSwift_Example/Pods-TransakSwift_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -755,7 +1086,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -768,10 +1099,109 @@
 			};
 			name = Debug;
 		};
-		3E39A517897BFCDD1DD7268CB1B69BE9 /* Debug */ = {
+		32185AC1988397BC3D1FA3CB418489A8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */;
+			baseConfigurationReference = E156F936C9F83D47565D6CA8065FC0C2 /* PureLayout.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/PureLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				PRODUCT_MODULE_NAME = PureLayout;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3726B0BF8D57781FEB320576DA14F84F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72AB4C9F65D7EF6264542064631AFF23 /* Pods-TransakSwift_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TransakSwift_Example/Pods-TransakSwift_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TransakSwift_Example/Pods-TransakSwift_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4045BE836C73A42BC1A658F87BEEB0E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 048ACBCA5B4E9CB078564BB2421DE15E /* PureLayout.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/PureLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				PRODUCT_MODULE_NAME = PureLayout;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4F2EDC446D596382C603BC0D5C00788C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84A3433D73A20B912866682F03B9A44D /* FBSnapshotTestCase.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -798,11 +1228,13 @@
 			};
 			name = Debug;
 		};
-		63EA49F6CCC8FF91B73BFD662EDA8441 /* Debug */ = {
+		51E82204EAEC884E07AB3CBAAD0ABBA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3CB06A34FFC59D7F6B5B5EE19F749F9A /* Pods-TransakSwift_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -813,7 +1245,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TransakSwift_Example/Pods-TransakSwift_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TransakSwift_Example/Pods-TransakSwift_Example.modulemap";
@@ -830,100 +1262,7 @@
 			};
 			name = Debug;
 		};
-		64AFF0FC392FB089D64C934C63F220B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B818BB372AC088EF37A2D623955FE80 /* TransakSwift.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TransakSwift/TransakSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TransakSwift/TransakSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TransakSwift/TransakSwift.modulemap";
-				PRODUCT_MODULE_NAME = TransakSwift;
-				PRODUCT_NAME = TransakSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		87C8EF672370A2131D4A46EE94692910 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7723F186242B303AD75E091B381706B4 /* Pods-TransakSwift_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TransakSwift_Tests/Pods-TransakSwift_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TransakSwift_Tests/Pods-TransakSwift_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BF531801B332EDF71FA8F4F9667B86BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
-				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
-				PRODUCT_NAME = FBSnapshotTestCase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -973,7 +1312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -985,23 +1324,220 @@
 			};
 			name = Release;
 		};
+		793AB200143ED2324EC2B61C7A27D287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2E9B5856594A836F56BF1D515A770AB /* TransakSwift.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TransakSwift/TransakSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TransakSwift/TransakSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TransakSwift/TransakSwift.modulemap";
+				PRODUCT_MODULE_NAME = TransakSwift;
+				PRODUCT_NAME = TransakSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B654B57D7640BC9A60CA5575E4DB6C06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D3FF64AF51F31C92B8D59164534A9AB /* BEPureLayout.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BEPureLayout/BEPureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BEPureLayout/BEPureLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BEPureLayout/BEPureLayout.modulemap";
+				PRODUCT_MODULE_NAME = BEPureLayout;
+				PRODUCT_NAME = BEPureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.4;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B9FE0B232D147CC45DB8F2605D630B69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7723F186242B303AD75E091B381706B4 /* Pods-TransakSwift_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TransakSwift_Tests/Pods-TransakSwift_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TransakSwift_Tests/Pods-TransakSwift_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D4205A4ADADF2F5456CB5CC65218B09E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D6FD1425241C8D6A8794A53FF014DAE /* FBSnapshotTestCase.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DDBD2E1278B4F0C8549FBB89CE8B1E91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F11A15C01D1E2B5170C50B2231E29E8C /* TransakSwift.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TransakSwift/TransakSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TransakSwift/TransakSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TransakSwift/TransakSwift.modulemap";
+				PRODUCT_MODULE_NAME = TransakSwift;
+				PRODUCT_NAME = TransakSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F5E9C0A289C79A6378661769476E707B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29EEB4C120640258E1427FFB77E80847 /* Pods-TransakSwift_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TransakSwift_Tests/Pods-TransakSwift_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TransakSwift_Tests/Pods-TransakSwift_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0969820E324EC9780723C2D3095FEB24 /* Build configuration list for PBXNativeTarget "Pods-TransakSwift_Example" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				63EA49F6CCC8FF91B73BFD662EDA8441 /* Debug */,
-				1B19E8AE925692F513EE09BC9421214A /* Release */,
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+		60E6FE23A195C8B2D63C8B88523E1EF1 /* Build configuration list for PBXNativeTarget "Pods-TransakSwift_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
-				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+				51E82204EAEC884E07AB3CBAAD0ABBA0 /* Debug */,
+				3726B0BF8D57781FEB320576DA14F84F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1009,8 +1545,17 @@
 		8EE222CBC85E2A935D8C4968DDD5AFB5 /* Build configuration list for PBXNativeTarget "Pods-TransakSwift_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				87C8EF672370A2131D4A46EE94692910 /* Debug */,
-				0F8EC5010DF3FF623202F899BF3A9C29 /* Release */,
+				B9FE0B232D147CC45DB8F2605D630B69 /* Debug */,
+				F5E9C0A289C79A6378661769476E707B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FD8D4CF0AD2E36E1EA1B1D20E771D28 /* Build configuration list for PBXNativeTarget "BEPureLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C861D2B9D0CDCA00D771943AFC19F7 /* Debug */,
+				B654B57D7640BC9A60CA5575E4DB6C06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1018,8 +1563,8 @@
 		A1E700AC57CB609C5787CAC786005C3E /* Build configuration list for PBXNativeTarget "TransakSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				64AFF0FC392FB089D64C934C63F220B1 /* Debug */,
-				1ACD40B673F19C48B9E6CBBA69C62000 /* Release */,
+				DDBD2E1278B4F0C8549FBB89CE8B1E91 /* Debug */,
+				793AB200143ED2324EC2B61C7A27D287 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1027,8 +1572,17 @@
 		A38070E189561F257BBD5A0A55CACCCF /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3E39A517897BFCDD1DD7268CB1B69BE9 /* Debug */,
-				BF531801B332EDF71FA8F4F9667B86BC /* Release */,
+				4F2EDC446D596382C603BC0D5C00788C /* Debug */,
+				D4205A4ADADF2F5456CB5CC65218B09E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B23FF2A0BBC2994D08AD49D70DAEBD1A /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4045BE836C73A42BC1A658F87BEEB0E5 /* Debug */,
+				32185AC1988397BC3D1FA3CB418489A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
