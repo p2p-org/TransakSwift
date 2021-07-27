@@ -20,6 +20,30 @@ it, simply add the following line to your Podfile:
 pod 'TransakSwift'
 ```
 
+## Usage
+
+The are 2 ways to implement `transak`:
+### 1. Implement `transak` as a `Widget` (a `UIViewController`), with `TransakWidgetViewController`
+
+```swift
+#if DEBUG
+let vc = TransakWidgetViewController(env: .stagging)
+present(vc, animated: true, completion: nil)
+#else
+let vc = TransakWidgetViewController(env: .production(params: .init(
+    apiKey: "<YOUR_API_KEY_HERE>",
+    hostURL: "<YOUR_COMPANY_URL>",
+    additionalParams: [
+        "cryptoCurrencyCode": "ETH",
+        "walletAddress": "0x86349020e9394b2BE1b1262531B0C3335fc32F20"
+        ]
+)))
+present(vc, animated: true, completion: nil)
+#endif
+```
+
+### 2. Custom implemetations using Transak API (developing)
+
 ## Author
 
 Chung Tran, bigearsenal@gmail.com
