@@ -7,7 +7,13 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - PureLayout (3.1.8)
-  - TransakSwift (0.1.0)
+  - PusherSwift (8.0.0):
+    - ReachabilitySwift (~> 5.0)
+    - Starscream (~> 3.1)
+  - ReachabilitySwift (5.0.0)
+  - Starscream (3.1.1)
+  - TransakSwift (0.1.0):
+    - PusherSwift
 
 DEPENDENCIES:
   - BEPureLayout (from `https://github.com/bigearsenal/BEPureLayout.git`)
@@ -18,6 +24,9 @@ SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
     - PureLayout
+    - PusherSwift
+    - ReachabilitySwift
+    - Starscream
 
 EXTERNAL SOURCES:
   BEPureLayout:
@@ -34,7 +43,10 @@ SPEC CHECKSUMS:
   BEPureLayout: ecb9d52780a665b9ea751b4e82f95df8dc2bc73b
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   PureLayout: a4afb3d79dd958564ce33d22c89f407280d8e6a8
-  TransakSwift: a71d4bdea085cc48b744d429e7ca212e571f756d
+  PusherSwift: 8f18b7beaf383e0475607ab6a3f89f477637fb21
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  TransakSwift: 2bbc87e1023fe4b4ef2d2c7b488d886f891963d1
 
 PODFILE CHECKSUM: 0ebf5e8c8d892dca7261a4488f1d0744228b241c
 
