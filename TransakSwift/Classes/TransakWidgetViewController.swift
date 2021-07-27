@@ -135,11 +135,9 @@ open class TransakWidgetViewController: UIViewController, WKUIDelegate, WKNaviga
         // load url
         let myRequest = URLRequest(url: myURL)
         webView.load(myRequest)
-        
-        webView.bringSubview(toFront: loadingView)
     }
     
-    private func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+    public func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
         if let serverTrust = challenge.protectionSpace.serverTrust {
             completionHandler(.useCredential, URLCredential(trust: serverTrust))
         }

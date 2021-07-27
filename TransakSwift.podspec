@@ -30,6 +30,8 @@ A client for transak.com which was written in pure Swift.
 
   s.ios.deployment_target = '12.0'
 
+  s.swift_version = '5.3'
+
   s.source_files = 'TransakSwift/Classes/**/*'
   
   # s.resource_bundles = {
