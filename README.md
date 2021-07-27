@@ -1,6 +1,6 @@
 # TransakSwift
 
-[![CI Status](https://img.shields.io/travis/Chung Tran/TransakSwift.svg?style=flat)](https://travis-ci.org/Chung Tran/TransakSwift)
+[![CI Status](https://img.shields.io/travis/p2p-org/TransakSwift.svg?style=flat)](https://travis-ci.org/p2p-org/TransakSwift)
 [![Version](https://img.shields.io/cocoapods/v/TransakSwift.svg?style=flat)](https://cocoapods.org/pods/TransakSwift)
 [![License](https://img.shields.io/cocoapods/l/TransakSwift.svg?style=flat)](https://cocoapods.org/pods/TransakSwift)
 [![Platform](https://img.shields.io/cocoapods/p/TransakSwift.svg?style=flat)](https://cocoapods.org/pods/TransakSwift)
