@@ -7,12 +7,12 @@
 
 import WebKit
 
-public protocol LoadingView: UIView {
+public protocol TransakWidgetLoadingView: UIView {
     func startLoading()
     func stopLoading()
 }
 
-extension UIActivityIndicatorView: LoadingView {
+extension UIActivityIndicatorView: TransakWidgetLoadingView {
     public func startLoading() {
         startAnimating()
     }
@@ -49,16 +49,7 @@ open class TransakWidgetViewController: UIViewController, WKUIDelegate, WKNaviga
     
     public enum Environment {
         case staging
-        case production(params: Params)
-        
-        var query: String? {
-            switch self {
-            case .staging:
-                return nil
-            case .production(let params):
-                return params.query
-            }
-        }
+        case production
         
         var endpoint: String {
             switch self {
@@ -68,23 +59,17 @@ open class TransakWidgetViewController: UIViewController, WKUIDelegate, WKNaviga
                 return "https://global.transak.com"
             }
         }
-        
-        var url: String {
-            var urlString = endpoint
-            if let query = query {
-                urlString += ("?" + query)
-            }
-            return urlString
-        }
     }
     
     // MARK: - Properties
     let env: Environment
+    let params: Params
     var loadsCount = 0
     
     // MARK: - Initializers
-    public init(env: Environment, loadingView: LoadingView = UIActivityIndicatorView()) {
+    public init(env: Environment, params: Params, loadingView: TransakWidgetLoadingView = UIActivityIndicatorView()) {
         self.env = env
+        self.params = params
         self.loadingView = loadingView
         super.init(nibName: nil, bundle: nil)
     }
@@ -94,7 +79,7 @@ open class TransakWidgetViewController: UIViewController, WKUIDelegate, WKNaviga
     }
     
     // MARK: - Subviews
-    let loadingView: LoadingView
+    let loadingView: TransakWidgetLoadingView
     lazy var webView: WKWebView = {
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
@@ -123,8 +108,9 @@ open class TransakWidgetViewController: UIViewController, WKUIDelegate, WKNaviga
             loadingView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor)
         ])
         
-        guard let myURL = URL(string: env.url) else {
-            let alert = UIAlertController(title: "Invalid URL", message: "The url isn't valid \(env.url)", preferredStyle: .alert)
+        let urlString = env.endpoint + "?" + params.query
+        guard let myURL = URL(string: urlString) else {
+            let alert = UIAlertController(title: "Invalid URL", message: "The url isn't valid \(urlString)", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert, animated: true, completion: nil)
             return

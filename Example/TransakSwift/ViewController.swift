@@ -32,23 +32,30 @@ class ViewController: UIViewController {
     @objc private func openWidgets() {
         let alert = UIAlertController(title: "Choose environment", message: "Please choose environment", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Production", style: .default) { [weak self] _ in
-            self?.openWidget(env: .production(params: .init(
+            self?.openWidget(env: .production, params: .init(
                 apiKey: "4fcd6904-706b-4aff-bd9d-77422813bbb7",
                 hostURL: "https://yourCompany.com",
                 additionalParams: [
                     "cryptoCurrencyCode": "ETH",
                     "walletAddress": "0x86349020e9394b2BE1b1262531B0C3335fc32F20"
                 ]
-            )))
+            ))
         })
         alert.addAction(UIAlertAction(title: "Staging", style: .cancel) { [weak self] _ in
-            self?.openWidget(env: .staging)
+            self?.openWidget(env: .staging, params: .init(
+                apiKey: "4fcd6904-706b-4aff-bd9d-77422813bbb7",
+                hostURL: "https://yourCompany.com",
+                additionalParams: [
+                    "cryptoCurrencyCode": "ETH",
+                    "walletAddress": "0x86349020e9394b2BE1b1262531B0C3335fc32F20"
+                ]
+            ))
         })
         present(alert, animated: true, completion: nil)
     }
     
-    private func openWidget(env: TransakWidgetViewController.Environment) {
-        let vc = TransakWidgetViewController(env: env)
+    private func openWidget(env: TransakWidgetViewController.Environment, params: TransakWidgetViewController.Params) {
+        let vc = TransakWidgetViewController(env: env, params: params)
         present(vc, animated: true, completion: nil)
     }
 }
