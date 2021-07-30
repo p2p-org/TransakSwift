@@ -23,31 +23,7 @@ extension UIActivityIndicatorView: TransakWidgetLoadingView {
 
 open class TransakWidgetViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
     // MARK: - Nested type
-    public struct Params {
-        public init(apiKey: String, hostURL: String, additionalParams: [String : String] = [:]) {
-            self.apiKey = apiKey
-            self.hostURL = hostURL
-            self.additionalParams = additionalParams
-        }
-        
-        let apiKey: String          // required
-        let hostURL: String         // required
-        var additionalParams: [String: String]
-        
-        var dict: [String: String] {
-            [
-                "apiKey": apiKey,
-                "hostURL": hostURL
-            ]
-            .merging(additionalParams) { current, _ in current }
-        }
-        
-        var query: String {
-            dict.keys.sorted()
-                .map {"\($0)=\(dict[$0]!.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? dict[$0]!)"}
-                .joined(separator: "&")
-        }
-    }
+    public typealias Params = [String: String]
     
     public enum Environment {
         case staging
@@ -110,7 +86,9 @@ open class TransakWidgetViewController: UIViewController, WKUIDelegate, WKNaviga
             loadingView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor)
         ])
         
-        loadTransak()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
+            self?.loadTransak()
+        }
     }
     
     public func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
@@ -162,5 +140,13 @@ open class TransakWidgetViewController: UIViewController, WKUIDelegate, WKNaviga
     private func stopLoading() {
         loadingView.isHidden = true
         loadingView.stopLoading()
+    }
+}
+
+public extension TransakWidgetViewController.Params {
+    var query: String {
+        keys.sorted()
+            .map {"\($0)=\(self[$0]!.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? self[$0]!)"}
+            .joined(separator: "&")
     }
 }
