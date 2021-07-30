@@ -32,7 +32,7 @@ open class TransakWidgetViewController: UIViewController, WKUIDelegate, WKNaviga
         
         let apiKey: String          // required
         let hostURL: String         // required
-        let additionalParams: [String: String]
+        var additionalParams: [String: String]
         
         var dict: [String: String] {
             [
@@ -43,7 +43,9 @@ open class TransakWidgetViewController: UIViewController, WKUIDelegate, WKNaviga
         }
         
         var query: String {
-            dict.keys.sorted().map {"\($0)=\(dict[$0]!)"}.joined(separator: "&")
+            dict.keys.sorted()
+                .map {"\($0)=\(dict[$0]!.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? dict[$0]!)"}
+                .joined(separator: "&")
         }
     }
     
@@ -108,19 +110,7 @@ open class TransakWidgetViewController: UIViewController, WKUIDelegate, WKNaviga
             loadingView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor)
         ])
         
-        let urlString = env.endpoint + "?" + params.query
-        guard let myURL = URL(string: urlString) else {
-            let alert = UIAlertController(title: "Invalid URL", message: "The url isn't valid \(urlString)", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alert, animated: true, completion: nil)
-            return
-        }
-        
-        startLoading()
-        
-        // load url
-        let myRequest = URLRequest(url: myURL)
-        webView.load(myRequest)
+        loadTransak()
     }
     
     public func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
@@ -141,6 +131,26 @@ open class TransakWidgetViewController: UIViewController, WKUIDelegate, WKNaviga
                 self?.stopLoading()
             }
         }
+    }
+    
+    // MARK: - Actions
+    private func loadTransak() {
+        // modify params
+        let urlString = env.endpoint + "?" + params.query
+        
+        // load url
+        guard let myURL = URL(string: urlString) else {
+            let alert = UIAlertController(title: "Invalid URL", message: "The url isn't valid \(urlString)", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        startLoading()
+        
+        // load url
+        let myRequest = URLRequest(url: myURL)
+        webView.load(myRequest)
     }
     
     // MARK: - Loading view
